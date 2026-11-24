@@ -56,9 +56,17 @@ A brief becomes an animated video with kinetic type, charts, icons, scene templa
 - **Templates and CSV bulk**: Catalogue, menu-board and per-branch videos at scale.
 - **Exports: MP4, 4K**: Deliverables for every channel in one place.
 
+## How it works
+
+A technical case study of the architecture, one end-to-end flow, the key engineering decisions and how you would build something like this: **[docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md)**.
+
 ## A look at the code
 
-**Voice- and beat-aware scene timing**: [`snippets/timeline.ts`](snippets/timeline.ts). Scene lengths come from the voiceover word timings or from reading speed, and can snap to the music beat without drifting off the frame grid. It is why edits stay in sync when one scene is changed.
+Real excerpts from the source, shown for illustration:
+
+- **Voice- and beat-aware scene timing** ([`snippets/timeline.ts`](snippets/timeline.ts)): Scene lengths come from the voiceover word timings or from reading speed, and can snap to the music beat without drifting off the frame grid. It is why edits stay in sync when one scene is changed.
+- **Fetching a website for a brief, without opening the network** ([`snippets/url_safety_guard.ts`](snippets/url_safety_guard.ts)): Before the server fetches a page a user names, it refuses private, loopback and metadata addresses (including IPv4 hidden inside IPv6), local-looking names, unusual ports and credentials in the URL.
+- **Credits charged and refunded exactly once** ([`snippets/credit_refund_run.ts`](snippets/credit_refund_run.ts)): An AI storyboard run charges credits and marks the video in one transaction. Each end of the run is a conditional update, so a failure refunds once and a late answer is ignored.
 
 ## Requirements (full version)
 
