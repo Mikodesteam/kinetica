@@ -8,6 +8,8 @@
   <b>AI motion-graphics video studio, self-hosted and white-label.</b>
 </p>
 
+<p align="center"><sub>AI video generator source code · motion graphics SaaS · captions & voiceover · self-hosted, white-label</sub></p>
+
 <p align="center">
   <a href="https://kinetica-demo.mikodes.com/"><b>▶ Live demo</b></a> ·
   <a href="https://kinetica.mikodes.com/docs/"><b>Docs</b></a> ·
@@ -78,6 +80,20 @@ Real excerpts from the source, shown for illustration:
 - ADMIN_SECRET_KEY
 
 Not included: Hosting, VPS and domain; Anthropic API usage; ElevenLabs API usage; Stripe fees, Resend and Pexels accounts; No generative video model.
+
+## FAQ
+
+**Is this the full source code?**  
+No. This repository is a showcase with screenshots, a technical case study and real code excerpts. The complete Kinetica source code is sold at [store.mikodes.com/p/kinetica](https://store.mikodes.com/p/kinetica/).
+
+**What is Kinetica built with?**  
+Vite, ffmpeg.
+
+**Can I try it before buying?**  
+Yes, open the [live demo](https://kinetica-demo.mikodes.com/).
+
+**Do I get help with the installation?**  
+Free setup help is included with the store purchase; questions go to [mikodes.com/support](https://mikodes.com/support).
 
 ## Get the full source code
 
